@@ -179,3 +179,127 @@ nav ul li a:hover::after{
     color:black;
     transform: translate(10px);
 }
+/* ----------portfoilo----------------- */
+/* #portfoilo{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 15px;
+    position:relative;
+    overflow:hidden;
+    background: #ff004f;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+
+}
+.work img{
+    width:100%;
+    height: 300px;
+    border-radius: 15px;
+    display: block;
+    background-size: cover;
+    background-position: left;
+    background: #ff4681;
+    position: left;
+    flex-basis: 30%;
+}
+.layer{
+    padding: 30px ;
+    flex-basis: 65%;
+    background: #51ff07;
+}
+.layer h3{
+    font-size: 30px; 
+}*/
+#portfoilo{
+    padding:80px 0;
+    color: #ababab;
+   
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100%,1fr));
+    grid-gap:30px;
+    margin-top: 50px;
+}
+.portfoilo-row{
+    
+    border-radius: 15px;
+    position:relative;
+    overflow:hidden;
+    background: #292929;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    transition: background 0.5s,transform .5s;
+}
+.portfoilo-row:hover{
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+
+    /* background:#ff004f; */
+    transform: translate(-10px);
+}
+.portfoilo-col-1 {
+    flex-basis: 60%;
+    padding: 25px;
+    color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .portfoilo-col-1 h3 {
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-block;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    color:#fff;
+  }
+  
+  .portfoilo-col-1 p {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+    color:antiquewhite;
+  }
+.portfoilo-col-1 a{
+    color:#ff004f ;
+    transition: .5s;
+}
+  
+
+.portfoilo-col-2{
+    flex-basis:40%;
+    padding: 10px;
+}
+.portfoilo-col-2 img{
+    width: 100%;
+    /* height: 300px; */
+    border-radius: 15px;
+    background: #080808;
+    overflow: hidden;
+    display: block;
+}
+.portfoilo-row:hover .portfoilo-col-2 img {
+    transform: scale(1.06);
+    transition: transform 0.7s;
+}
+.portfoilo-row:hover .portfoilo-col-1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    transition: 0.7s;
+    border-radius: 50%;
+    text-align: center;
+}
+.portfoilo-row:hover .portfoilo-col-1 a:hover {
+    color: aquamarine;
+    
+}
