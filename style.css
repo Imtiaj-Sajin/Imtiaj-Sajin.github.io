@@ -17,6 +17,9 @@ body{
     background-image: url(images/bg3.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+
+    
 }
 .container{
     padding:10px 10%;
@@ -26,6 +29,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 .logo{
     width:140px;
@@ -59,7 +63,7 @@ nav ul li a:hover::after{
 .header-text{
     /* position:relative; */
     text-align:right;
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 30px;
 }
 .header-text h1{
@@ -68,6 +72,10 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
     color:#ff004f ;
+    font-size: 80px;
+    /* font-weight: 800; */
+
+
 }
 /* -----------------about------------------ */
 #about{
@@ -156,6 +164,11 @@ nav ul li a:hover::after{
     background:#ff004f;
     transform: translate(-10px);
 }
+
+.services-list div a:hover{
+    color:black;
+    transform: translate(10px);
+}
 .services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
@@ -180,10 +193,6 @@ nav ul li a:hover::after{
     color:#fff;
     display: inline-block;
     transition: .5s;
-}
-.services-list div a:hover{
-    color:black;
-    transform: translate(10px);
 }
 /* ----------portfoilo----------------- */
 /* #portfoilo{
@@ -310,7 +319,7 @@ nav ul li a:hover::after{
 .contact-left{
     flex-basis: 35%;
 }
-contact-right{
+.contact-right{
     flex-basis: 60%;
 }
 .contact-left p{
@@ -380,6 +389,12 @@ form .btn:hover{
     text-align: right;
 }
 
+#msg{
+    color:#61b752;
+    margin-top: 0px;
+    display: block;
+}
+
 /* -----------------css for small screen------------------- */
 nav .fas{
     display: none;
@@ -391,7 +406,7 @@ nav .fas{
     
     .header-text{
         text-align: end;
-        margin-top: 100%;
+        margin-top: 90%;
         font-size: 16px;
     }
     .header-text h1{
@@ -450,6 +465,24 @@ nav .fas{
         text-align: center;
         
     }
+    .btn{
+        background:#ff004f;
+    }
+        
+    /* .services-list div{
+        transition: .5s;
+    }     
+    .services-list div.active{
+        background:#ff004f;
+        transform: translate(-10px);
+    }
+    .services-list div a.active{
+        color:black;
+        transform: translate(10px);
+    }
+    .services-list div a{
+        transition: .5s;
+    } */
 
     
 }
