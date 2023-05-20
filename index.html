@@ -165,12 +165,12 @@
                     <a href="images/CV forjobs.pdf" download class="btn">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <form onsubmit="sendMail();reset();return false;">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea id="message" rows="6" placeholder="Your Message"></textarea>
                         <div class="submit-container">
-                            <button type="submit" class="btn">Submit</button>
+                            <button type="submit" class="btn">sssss</button>
                         </div>
                     </form>
                 </div>
@@ -181,7 +181,7 @@
         </div>
     </div>
 <!-- -----------------scripts----------------------------- -->
-         <script>
+        <script>
             var tablinks=document.getElementsByClassName("tab-links");
             var tabcontents=document.getElementsByClassName("tab-contents");
 
@@ -195,8 +195,8 @@
                 event.currentTarget.classList.add("active-link");
                 document.getElementById(tabname).classList.add("active-tab");
             }
-         </script>
-         <script>
+        </script>
+        <script>
             var sidemenu=document.getElementById("sidemenu");
 
             function openmenu(){
@@ -206,7 +206,45 @@
                 sidemenu.style.right="-200px";
             }
             
-         </script>
+        </script>
+<!-- ----------------------send maillllllllllllllll------------------------ -->
+        <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+            emailjs.init("Z3wxB3kfqxD6Eq-_m");
+            })();
+        </script>
+        <script>
+            function sendMail(){
+                var params={
+                    name:document.getElementById("name").value,
+                    email:document.getElementById("email").value,
+                    message:document.getElementById("message").value,
+                };
+
+
+            const serviceID="service_zm6b89r";
+            const templateID="template_ptqy5ey";
+
+            emailjs
+            .send(serviceID, templateID, params)
+                .then(res=>{
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("message").value = "";
+                    console.log(res);
+                    alert("Your message sent successfully!!")
+
+                })
+                .catch(err=>console.log(err));
+
+            }
+
+        </script>
+        
         
     </body>
 </html>
