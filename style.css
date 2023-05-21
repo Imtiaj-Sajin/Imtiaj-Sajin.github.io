@@ -499,6 +499,11 @@ nav .fas{
     .about-col-2{
         font-size:14px;
     }
+
+    .portfoilo-col-1,.portfoilo-col-2{
+        flex-basis: 100%;
+        
+    }
     .tab-links{
         font-size: 16px;
         margin-right:30px;
@@ -531,6 +536,22 @@ nav .fas{
     .services-list div a{
         transition: .5s;
     } */
+}
+/* ------------------------for larger medium screens--------------- */
+@media only screen and (max-width:1600px){
+    .portfoilo-col-1{
+        flex-basis: 30%;        
+    }
+    .portfoilo-col-2{
+        flex-basis: 60%;        
+    }
+    
+}
 
+/* ------------------------for medium screens--------------- */
+@media only screen and (max-width:1020px){
+    .portfoilo-col-1,.portfoilo-col-2{
+        flex-basis: 100%;        
+    }
     
 }
