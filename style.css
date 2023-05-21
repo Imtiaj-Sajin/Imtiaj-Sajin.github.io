@@ -70,11 +70,59 @@ nav ul li a:hover::after{
     font-size: 70px;
     margin-top: 20px;
 }
+.header-text p {
+    display: inline-block;
+    border-right: 0.1em solid #000; /* Adjust the border style as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #000; /* Adjust the caret color as needed */
+    }
+  }
+  
+/* .header-text h1::before,.header-text h1::after{
+    content: '';
+    padding: 70px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    border:15px solid #ff004f;
+    transform: translateX(-50%) translateY(-50%) rotate(var(--rotation, 0deg));
+    transition: transform 0.3s ease;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        --rotation: 0deg;
+    }
+    100% {
+        --rotation: 360deg;
+    }
+} */
+
 .header-text h1 span{
     color:#ff004f ;
     font-size: 80px;
     /* font-weight: 800; */
-
 
 }
 /* -----------------about------------------ */
