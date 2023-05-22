@@ -32,7 +32,8 @@ nav{
     
 }
 .logo{
-    width:140px;
+    width:160px;
+    
 }
 nav ul li{
     display:inline-block;
@@ -449,9 +450,13 @@ nav .fas{
 }
 @media only screen and (max-width:600px){
     #header{
-        background-image: url("images/pnf1.jpg");
+        background-image: url("images/pnf2.jpg");
     }
     
+.logo{
+    width:100px;
+    
+}
     .header-text{
         text-align: end;
         margin-top: 90%;
