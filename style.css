@@ -581,9 +581,7 @@ nav .fas{
         font-weight: 800;
     
     }
-    .bubbles img{
-        width: 20px;
-    }
+   
     nav .fas{
         display: block;
         font-size: 25px;
@@ -645,6 +643,12 @@ nav .fas{
     .btn{
         background:#ff004f;
     }
+    .bubbles img{
+        width: 20px;
+    }
+    .bubbles img:nth-child(17),.bubbles img:nth-child(18),.bubbles img:nth-child(19),.bubbles img:nth-child(20),.bubbles img:nth-child(21),.bubbles img:nth-child(22) {
+        display: none;
+      }
         
     /* .services-list div{
         transition: .5s;
