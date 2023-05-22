@@ -133,6 +133,7 @@ nav ul li a:hover::after{
     width:25px;
     animation:bubble 6s linear infinite;
     opacity: 0;
+    overflow:hidden;
     
 }
 .bubbles{
