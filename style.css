@@ -11,6 +11,7 @@ body{
     background: #080808;
     color: #fff;
 }
+
 #header{
     width: 100%;
     height: 100vh;
@@ -511,15 +512,20 @@ nav ul li a:hover::after{
     width:fit-content;
     border:1px solid #ff004f;
     padding:14px 50px;
-    border-radius: 6px;
+    border-radius: 7px;
     text-decoration: none;
     color:#fff;
-    background: #ff00517c;
+    /* background: #ff00517c; */
     transition: .5s;
+    background: #ff004f;
 }
 .btn:hover{
-    background:#ff004f;
+    /* background:#ff004f; */
     transform: translate(5px);
+    box-shadow: 0 0 5px #ff004f,
+    0 0 25px #ff004f,
+    0 0 50px #ff004f,
+    0 0 100px #ff004f;
 }
 .contact-right form{
     width: 100%;
@@ -541,9 +547,23 @@ form .btn{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
+    /* color: #fff; */
+    /* border-radius: 7px; */
+    /* letter-spacing: 4px; */
+    /* font-weight: 700; */
+    /* text-transform: uppercase; */
+    transition: 0.5s;
+    /* transition-property: box-shadow; */
+    /* background: #ff004f; */
+    /* box-shadow: 0 0 25px #ff004f; */
 }
+
 form .btn:hover{
-    transform: translate(-5px);
+    transform: translate(5px);
+    box-shadow: 0 0 5px #ff004f,
+    0 0 25px #ff004f,
+    0 0 50px #ff004f,
+    0 0 100px #ff004f;
 }
 .submit-container{
     text-align: right;
@@ -683,3 +703,79 @@ nav .fas{
     }
     
 }
+
+
+/* ----------------pre-loader-------------------- */
+.loaderbg{
+    position: fixed;
+    background: #080808;
+    /* transform: translate(-50%, -50%); */
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+}
+.spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    z-index: 100;
+  }
+  
+  .spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 99;
+    opacity: 0.8;
+  }
+  
+  .spinner div {
+    width: 100%;
+    height: 100%;
+    background-color: #ff004f;
+    border-radius: 50%;
+    animation: spinner-4t3wzl 1.25s infinite backwards;
+  }
+  
+  .spinner div:nth-child(1) {
+    animation-delay: 0.15s;
+    background-color: rgba(255, 0, 79, 0.9);
+  }
+  
+  .spinner div:nth-child(2) {
+    animation-delay: 0.3s;
+    background-color: rgba(255, 0, 79, 0.8);
+  }
+  
+  .spinner div:nth-child(3) {
+    animation-delay: 0.45s;
+    background-color: rgba(255, 0, 79, 0.7);
+  }
+  
+  .spinner div:nth-child(4) {
+    animation-delay: 0.6s;
+    background-color: rgba(255, 0, 79, 0.6);
+  }
+  
+  .spinner div:nth-child(5) {
+    animation-delay: 0.75s;
+    background-color: rgba(255, 0, 79, 0.5);
+  }
+  
+  
+  @keyframes spinner-4t3wzl {
+    0% {
+      transform: rotate(0deg) translateY(-200%);
+    }
+  
+    60%, 100% {
+      transform: rotate(360deg) translateY(-200%);
+    }
+  }
+  
